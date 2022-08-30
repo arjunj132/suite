@@ -1,4 +1,4 @@
-# suite
+# `arjunj132` suite
 Low-resource intensive and advanced document editor - arjunj132 Suite
 
 Powered 
