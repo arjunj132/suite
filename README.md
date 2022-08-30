@@ -20,4 +20,8 @@ Updates roll out to Alpha then Beta and then Stable even if the update is stable
 
 Alpha releases is what we use to test out features.
 
+View Stable source code here: https://github.com/arjunj132/suite/blob/main/index.html
+View Beta source code here: https://replit.com/@ArjunJakkipally/suite#index.html
+View Alpha source code here: https://replit.com/@ArjunJakkipally/suite#alpha/index.html
+
 Note - Made for computers only (no mobile)
