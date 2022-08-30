@@ -11,9 +11,9 @@ Visit our site:
 |------------------------------------|----------------------------------------|
 | https://arjunj132.github.io/suite/ | https://suite.arjunjakkipally.repl.co/ |
 
-We reccomend Stable for regular users - for users that want the latest features, use Beta.
+We recommend Stable for regular users - for users that want the latest features, use Beta.
 
-**Not reccomended: Alpha**:
+**Not recommended: Alpha**:
 https://suite.arjunjakkipally.repl.co/alpha/
 
 This is the one which get experimental fetures and if you expect to use it daily and cannot handle it broken completly, do not use this version.
