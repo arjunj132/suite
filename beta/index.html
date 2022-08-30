@@ -1,0 +1,158 @@
+<!--
+Docs - provided by arjunj132 Suite
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script
+    src="https://cdn.tiny.cloud/1/nig9mpjfp596a0je4lpigmzxhwsfmco8xlizwdnh229mhmqx/tinymce/6/tinymce.min.js"></script>
+  <style>
+    /* For other boilerplate styles, see: https://www.tiny.cloud/docs/tinymce/6/editor-content-css/ */
+    /*
+* For rendering images inserted using the image plugin.
+* Includes image captions using the HTML5 figure element.
+*/
+
+    #open-source-plugins {
+      position: absolute; // or fixed;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%; // You height
+    }
+
+    figure.image {
+      display: inline-block;
+      border: 1px solid gray;
+      margin: 0 2px 0 1px;
+      background: #f5f2f0;
+    }
+
+    figure.align-left {
+      float: left;
+    }
+
+    figure.align-right {
+      float: right;
+    }
+
+    figure.image img {
+      margin: 8px 8px 0 8px;
+    }
+
+    figure.image figcaption {
+      margin: 6px 8px 6px 8px;
+      text-align: center;
+    }
+
+    /*
+ Alignment using classes rather than inline styles
+ check out the "formats" option
+*/
+
+    img.align-left {
+      float: left;
+    }
+
+    img.align-right {
+      float: right;
+    }
+
+    /* Basic styles for Table of Contents plugin (tableofcontents) */
+    .mce-toc {
+      border: 1px solid gray;
+    }
+
+    .mce-toc h2 {
+      margin: 4px;
+    }
+
+    .mce-toc li {
+      list-style-type: none;
+    }
+  </style>
+  <title>arjunj132 Docs - Beta</title>
+</head>
+
+<body>
+  <!--Appears in Tiny Blueprint (https://www.tiny.cloud/blog/) in articles:
+ - The TinyMCE WYSIWYG editor is free forever-->
+  <textarea id="full-featured-non-premium"><p style="text-align: center;"><span style="color: rgb(0, 0, 0); font-size: 36pt;"><span style="color: rgb(35, 111, 161);">arjunj132</span> Suite - Docs</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">Low resource intensive docs editing advanced platform. Powered by TinyMCE.</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">To download, click File &gt; Print &gt; Save as PDF</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">To convert to HTML, use Tools &gt; Sorce code</span></p>
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">Thanks for using arjunj132 Suite,</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt; color: rgb(224, 62, 45);">arjunj132</span></p>
+<p style="text-align: left;"><span style="color: rgb(0, 0, 0); font-size: 10pt;">You can delete all this text</span></p>
+</textarea>
+
+
+  <script>
+    tinymce.init({
+      selector: 'textarea#full-featured-non-premium',
+      plugins: 'preview importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbars emoticons fullscreen',
+      imagetools_cors_hosts: ['picsum.photos'],
+      menubar: 'file edit view insert format tools table help',
+      toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
+      toolbar_sticky: true,
+      autosave_ask_before_unload: true,
+      autosave_interval: "30s",
+      autosave_prefix: "{path}{query}-{id}-",
+      autosave_restore_when_empty: false,
+      autosave_retention: "2m",
+      image_advtab: true,
+      content_css: '//www.tiny.cloud/css/codepen.min.css',
+      link_list: [
+        {title: 'My page 1', value: 'http://www.tinymce.com'},
+        {title: 'My page 2', value: 'http://www.moxiecode.com'}
+      ],
+      image_list: [
+        {title: 'My page 1', value: 'http://www.tinymce.com'},
+        {title: 'My page 2', value: 'http://www.moxiecode.com'}
+      ],
+      image_class_list: [
+        {title: 'None', value: ''},
+        {title: 'Some class', value: 'class-name'}
+      ],
+      importcss_append: true,
+      file_picker_callback: function (callback, value, meta) {
+        /* Provide file and text for the link dialog */
+        if (meta.filetype === 'file') {
+          callback('https://www.google.com/logos/google.jpg', {text: 'My text'});
+        }
+
+        /* Provide image and alt text for the image dialog */
+        if (meta.filetype === 'image') {
+          callback('https://www.google.com/logos/google.jpg', {alt: 'My alt text'});
+        }
+
+        /* Provide alternative source and posted for the media dialog */
+        if (meta.filetype === 'media') {
+          callback('movie.mp4', {source2: 'alt.ogg', poster: 'https://www.google.com/logos/google.jpg'});
+        }
+      },
+      templates: [
+        {title: 'New Table', description: 'creates a new table', content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>'},
+        {title: 'Starting my story', description: 'A cure for writers block', content: 'Once upon a time...'},
+        {title: 'New list with dates', description: 'New List with dates', content: '<div class="mceTmpl"><span class="cdate">cdate</span><br /><span class="mdate">mdate</span><h2>My List</h2><ul><li></li><li></li></ul></div>'}
+      ],
+      template_cdate_format: '[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]',
+      template_mdate_format: '[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]',
+      setup: function(editor) {
+        editor.on('init', function(e) {
+          editor.execCommand('mceFullScreen');
+        });
+      },
+      image_caption: true,
+      quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
+      noneditable_noneditable_class: "mceNonEditable",
+      toolbar_mode: 'sliding',
+      contextmenu: "link image imagetools table",
+    });
+  </script>
+</body>
+
+</html>
