@@ -1,7 +1,3 @@
-<div align="center">
-  :warning: Beta and Alpha servers are down. Please use the Stable version. We are fixing this as soon as we can.
-</div>
-
 # `arjunj132` suite
 Low-resource intensive and advanced document editor - arjunj132 Suite
 
