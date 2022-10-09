@@ -13,14 +13,16 @@ Visit our site:
 
 We recommend Stable for regular users - for users that want the latest features, use Beta.
 
-**Not recommended: Alpha**:
-https://suite.arjunjakkipally.repl.co/alpha/
+**Alpha**: https://suite.arjunjakkipally.repl.co/alpha/
 
 This is the one which get experimental fetures and if you expect to use it daily and cannot handle it broken completly, do not use this version.
 
 Updates roll out to Alpha then Beta and then Stable even if the update is stable.
 
 Alpha releases is what we use to test out features.
+
+For a more featured editor: https://suite.arjunjakkipally.repl.co/cke.html
+For a more simple editor: https://suite.arjunjakkipally.repl.co/quill.html
 
 ## Source
 
