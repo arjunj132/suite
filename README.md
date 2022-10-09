@@ -21,7 +21,8 @@ Updates roll out to Alpha then Beta and then Stable even if the update is stable
 
 Alpha releases is what we use to test out features.
 
-For a more featured editor: https://suite.arjunjakkipally.repl.co/cke.html
+For a more featured editor but not user friendly: https://suite.arjunjakkipally.repl.co/cke.html
+
 For a more simple editor: https://suite.arjunjakkipally.repl.co/quill.html
 
 ## Source
